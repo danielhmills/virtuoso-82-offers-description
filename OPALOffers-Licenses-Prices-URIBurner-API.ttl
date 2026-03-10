@@ -1,15 +1,10 @@
 @prefix schema:    <http://schema.org/> .
 @prefix cc:        <http://creativecommons.org/ns#> .
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
 @prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
 @prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
 @prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
-@prefix oplres:    <http://www.openlinksw.com/ontology/restrictions#> .
-@prefix oplacl:    <http://www.openlinksw.com/ontology/acl#> .
-@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
 @prefix gr:        <http://purl.org/goodrelations/v1#> .
 @prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
 @prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
@@ -106,7 +101,7 @@
 # ==============================================================================
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseub-server#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly ;
+    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly ;
     skos:altLabel "OPAL API Access Entry Level License" ;
     schema:name "OPAL API Access Entry Level License" ;
     schema:description "License for Entry Level API access via /chat/api using BYOK." ;
@@ -120,7 +115,7 @@
     skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseub-server#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Medium Level License" ;
     schema:name "OPAL API Access Medium Level License" ;
     schema:description "License for Medium Level API access via /chat/api using BYOK." ;
@@ -133,7 +128,7 @@
     skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseub-server#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Advanced License" ;
     schema:name "OPAL API Access Advanced License" ;
     schema:description "License for Advanced Level API access via /chat/api using BYOK." ;
@@ -146,7 +141,7 @@
     skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseub-server#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Max License" ;
     schema:name "OPAL API Access Max License" ;
     schema:description "License for Max Level API access via /chat/api using System-Wide keys." ;
